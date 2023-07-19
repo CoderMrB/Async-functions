@@ -1,5 +1,7 @@
 console.log("hello world")
 let h1 = document.getElementById("quote")
+let quoteGenerator = document.getElementById("new-quote-button")
+quoteGenerator.addEventListener('click', getQuote)
 
 async function getQuote(){
     let quote = await fetch(`http://type.fit/api/quotes`);

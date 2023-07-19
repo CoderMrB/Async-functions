@@ -6,4 +6,5 @@ async function getQuote(){
     console.log(result[Math.floor(Math.random()*1643)].text);
 }
 
+
 getQuote()
